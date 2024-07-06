@@ -12,6 +12,10 @@
     --PIC-BORDER: 5px double var(--HEADER-BGCOLOR);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nowrap {
     white-space: nowrap;
 }
@@ -453,6 +457,10 @@
 
     .message {
         padding: 0;
+    }
+
+    .form {
+        padding-right: 1rem;
     }
 
     
