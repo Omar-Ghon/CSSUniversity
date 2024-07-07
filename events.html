@@ -52,6 +52,7 @@
             </table>
         </nav>
     </header>
+    <h2 class="events__title">Our Events</h2>
     <main class="events__main">
         <section id="welcome" class="card">
             <figure class="wweek-figure">
@@ -86,6 +87,59 @@
             </figure>
         </section>    
     </main>
+    <footer class="footer">
+        <h2 class="contact__header">Contact Info</h2>
+        <hr>
+        <section class="contact__methods">
+            <section class="info">
+                Phone: <a href="tel: +1234567890" class="phone">+123-456-7890</a>
+                <br> <br>
+                <address>
+                    Registrar Office: <br>
+                    123 Front-End Lane, Suite 1 <br>
+                    Hamilton, ON
+                </address>
+            </section>
+            <section class="form">
+                <h3 class="form__header">Any questions?</h3>
+                <form action="https://httpbin.org/get" method="get" class="contact__form">
+                    <fieldset class="contact__fieldset">
+                        <section class="your_info">
+                        <legend class="offscreen">Send Us A Message</legend>
+                            <p class="contact__p">
+                                <label class="contact__label" for="name">Name:</label>
+                                <input class="contact__input" type="text" name="name" id="name" placeholder="Your name" required>
+                            </p>
+                            <p class="contact__p">
+                                <label class="contact__label" for="email">Email:</label>
+                                <input class="contact__input" type="email" name="email" id="email" placeholder="Your email" required>
+                            </p>
+                            <p class="contact__p">
+                                <label class="contact__label" for="message">What's your message about?</label>
+                                <input class="contact__input" type="text" name="message" id="message" list="message-list">
+                                <datalist id="message-list">
+                                    <option value="Admissions">
+                                    <option value="Academics">
+                                    <option value="Financials">
+                                    <option value="Other">
+                                </datalist>
+                            </p>
+                        </section>
+                        <section class="message">
+                            <p class="contact__p">
+                                <label class="contact__label" for="message">Your Message:</label>
+                                <br>
+                                <textarea class="contact__textarea" name="message" id="message" cols="20" rows="5"
+                                    placeholder="Type your message here"></textarea>
+                            </p>
+                            <button class="contact__button" type="submit">Send</button>
+                        </section>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+
+    </footer>
 
 </body>
 </html>
