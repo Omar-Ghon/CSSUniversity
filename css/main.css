@@ -197,28 +197,23 @@ html {
     opacity: 0.8;
 }
 
-.events__body, .faculties__body {
+
+.events__body, .faculties__body, .admissions__body, .homepage__body {
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     background-image: radial-gradient(#CCC, rgba(43, 2, 86, 0.4));
 }
 
-.homepage__body {
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    background-image: radial-gradient(#CCC, rgba(43, 2, 86, 0.4));
-}
 
-.principal__title, .events__title, .faculties__title {
+.principal__title, .events__title, .faculties__title, .admissions__title {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     color: var(--HEADER-COLOR);
 }
 
-.principal__title {
-    font-size: 2.5rem;
+.principal__title, .admissions__title {
+    font-size: 3rem;
 }
 
 .principal__container {
@@ -275,8 +270,8 @@ html {
 .stats__header {
     color: var(--HEADER-COLOR);
     text-align: center;
-    padding: 1rem;
-    font-size: 3rem;
+    padding: 1.5rem;
+    font-size: 3.5rem;
 }
 
 .stats {
@@ -297,24 +292,71 @@ html {
     color: rgb(2, 149, 39);
 }
 
+.application {
+    border-radius: 20px;
+    border: 10px solid whitesmoke;
+    margin: 3rem 0;
+    width: 90%;
+    background-color: var(--HEADER-COLOR);
+    color: var(--HEADER-BGCOLOR);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.application-header {
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.app-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.app-details fieldset {
+    border: none;
+    margin: 1rem;
+}
+
+.student-type-header, .faculty-type-header {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.student-type-option, .faculty-type-option {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.app-option {
+    margin: 0.8rem;
+}
+
+.application-find {
+    align-self: center;
+}
+
 .faculties__title {
     font-size: 3.5rem;
 }
 
-.all-faculties {
+.all-faculties, .admissions__main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-.all-faculties img {
-    border-radius: 15px;
+.all-faculties img, .admissions__main img {
+    border-radius: 25px;
     margin: 1.5rem;
     width: 550px;
     height: 340px;
 }
 
-.faculty {
+.faculty, .sector {
     border-radius: 20px;
     border: 10px solid whitesmoke;
     width: 90%;
@@ -326,28 +368,28 @@ html {
     background-color: var(--HEADER-COLOR);
 }
 
-.faculty-description {
+.faculty-description, .sector-description {
     margin: 1rem;
     display: grid;
     place-content: center;
     text-align: center;
 }
 
-.faculty-header {
+.faculty-header, .sector-header {
     font-size: 3rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
-.faculty-intro {
+.faculty-intro, .sector-intro {
     font-size: 1.5rem;
 }
 
-.faculty-community {
+.faculty-community, .sector-community {
     margin: 2rem 0;
 }
 
-.faculty-button {
+.faculty-button, .sector-button {
     font-size: 1.3rem;
     font-weight: bold;
     width: 200px;
@@ -358,7 +400,7 @@ html {
     border-radius: 10px;
 }
 
-.faculty-button:hover {
+.faculty-button:hover, .sector-button:hover {
     cursor: pointer;
     transform: scale(1.2);
     line-height: 1.2;
@@ -520,7 +562,7 @@ html {
 }
 
 @media screen and (max-width: 1100px) {
-    .all-faculties img {
+    .all-faculties img, .admissions__main img {
         width: 450px;
         height: 250px;
     }
@@ -531,16 +573,16 @@ html {
 }
 
 @media screen and (max-width: 970px) {
-    .all-faculties img {
+    .all-faculties img, .admissions__main img {
         width: 400px;
         height: 200px;
     }
 
-    .faculty-header {
+    .faculty-header, .sector-header {
         font-size: 2.5rem;
     }
 
-    .faculty-description {
+    .faculty-description, .sector-description {
         font-size: 1rem;
     }
 
@@ -562,24 +604,24 @@ html {
         padding: 0;
     }
 
-    .all-faculties img {
+    .all-faculties img, .admissions__main img {
         width: 300px;
         height: 200px;
         margin-bottom: 0;
     }
 
-    .faculty-header {
+    .faculty-header, .sector-header {
         font-size: 2rem;
         margin-top: 1rem;
     }
 
-    .faculty {
+    .faculty, .sector {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
     }
 
-    .faculty:nth-child(2) {
+    .faculty:nth-child(2), .sector:nth-child(2) {
         display: flex;
         flex-flow: column-reverse nowrap;
         justify-content: center;
@@ -666,9 +708,15 @@ html {
         font-size: 1.5rem;
     }
 
-    .all-faculties img {
+    .all-faculties img, .admissions__main img {
         width: 275px;
         height: 200px;
+    }
+
+    .application-header {
+        margin: 1rem 0;
+        font-size: 2rem;
+        text-align: center;
     }
 
 }  
@@ -700,7 +748,7 @@ html {
     }
 
     .principal__title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
 }

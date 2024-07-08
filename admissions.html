@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="admissions__body">
     <header class="header">
         <section class="headerline">
             <h1 class="header__h1">CSS University</h1>
@@ -28,12 +28,12 @@
                 </thead>
                 <tbody class="header__tbody">
                     <tr>
-                        <td class="nav__tdata"><a href="admissions.html#why" class="td__link">Why CSS University?</a></td>
+                        <td class="nav__tdata"><a href="admissions.html#undergrad" class="td__link">Undergraduates</a></td>
                         <td class="nav__tdata"><a href="faculties.html#engineering" class="td__link">Engineering</a></td>
                         <td class="nav__tdata"><a href="events.html#welcome" class="td__link">Welcome Week</a></td>
                     </tr>
                     <tr>
-                        <td class="nav__tdata"><a href="admissions.html#enroll" class="td__link">Enrollment Info</a></td>
+                        <td class="nav__tdata"><a href="admissions.html#grad" class="td__link">Graduates</a></td>
                         <td class="nav__tdata"><a href="faculties.html#medicine" class="td__link">Medicine</a></td>
                         <td class="nav__tdata"><a href="events.html#alumni-dinner" class="td__link">Alumni Dinner</a></td>
                     </tr>
@@ -48,19 +48,137 @@
                         <td class="nav__tfoot" colspan="3"><a href="/" class="nav__home">Back To Home</a></td>
                     </tr>
                 </tfoot>
-                
             </table>
         </nav>
     </header>
-    <section id="why">
-        <p>Why CSS?</p>
-    </section>
-    <section id="enroll">
-        <p>Enrollment</p>
-    </section>
-    <section id="apply">
-        <p>Apply</p>
-    </section>
+
+    <main class="admissions__main">
+        <h2 class="admissions__title">Our Admissions</h2>
+            <section class="sector" id="undergrad">
+                <section class="sector-description">
+                    <h3 class="sector-header">Undergraduates</h3>
+                    <p class="sector-intro">We maintain a variety of high-quality undergraduate programs in CSS University so students can reach for their desired paths. Speak to current undergraduates and ask any questions below!</p>
+                    <section class="sector-community">
+                        <button type="submit" class="sector-button">Meet Current Undergraduates!</button>
+                    </section>
+                </section>
+                <figure>
+                    <img class="admissions__img" src="img/image.png" alt="CSS Undergraduates" width="817" height="573">
+                </figure>
+            </section>
+            <section class="sector" id="grad">
+                <figure>
+                    <img class="admissions__img" src="img/graduates.png" alt="CSS Graduates" width="523" height="364">
+                </figure>
+                <section class="sector-description">
+                    <h3 class="sector-header">Graduates</h3>
+                    <p class="sector-intro">Our numerous postgraduate studies provide aspiring students to continue their education at CSS University, whether Master's or a PhD certification. Speak to current graduates and ask any questions below!</p>
+                    <section class="sector-community">
+                        <button type="submit" class="sector-button">Meet Current Graduates!</button>
+                    </section>
+                </section>
+            </section>
+            <section class="application" id="apply">
+                <h3 class="application-header">Find Application Requirements</h3>
+                <form class="app-details" action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend class="faculty-type-header">Choose Faculty:</legend>
+                         <p class="app-option">
+                            <input type="radio" name="program" id="engineer" value="engineer">
+                            <label class="faculty-type-option" for="engineer">Engineering</label>
+                        </p>
+                         <p class="app-option">
+                            <input type="radio" name="program" id="med" value="med">
+                            <label class="faculty-type-option" for="med">Medicine</label>
+                        </p>
+                         <p class="app-option">
+                            <input type="radio" name="program" id="commerce" value="commerce">
+                            <label class="faculty-type-option" for="commerce">Commerce</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="student-type-header">Choose Student Type:</legend>
+                         <p class="app-option">
+                            <input type="radio" name="level" id="high-school" value="high-school">
+                            <label class="student-type-option" for="high-school">High School Graduate</label>
+                        </p>
+                         <p class="app-option">
+                            <input type="radio" name="level" id="grad" value="grad">
+                            <label class="student-type-option" for="grad">Graduate Student</label>
+                        </p>
+                         <p class="app-option">
+                            <input type="radio" name="level" id="transfer" value="transfer">
+                            <label class="student-type-option" for="transfer">Transfer Student</label>
+                        </p>
+                         <p class="app-option">
+                            <input type="radio" name="level" id="mature" value="mature">
+                            <label class="student-type-option" for="mature">Mature Student</label>
+                        </p>
+                         <p class="app-option">
+                            <input type="radio" name="level" id="other" value="other">
+                            <label class="student-type-option" for="other">General Requirements</label>
+                        </p>
+                    </fieldset>
+                </form>
+                <section class="sector-community application-find">
+                    <button type="submit" class="sector-button">Find Requirements</button>
+                </section>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="contact__header">Contact Info</h2>
+        <hr>
+        <section class="contact__methods">
+            <section class="info">
+                Phone: <a href="tel: +1234567890" class="phone">+123-456-7890</a>
+                <br> <br>
+                <address>
+                    Registrar Office: <br>
+                    123 Front-End Lane, Suite 1 <br>
+                    Hamilton, ON
+                </address>
+            </section>
+            <section class="form">
+                <h3 class="form__header">Any questions?</h3>
+                <form action="https://httpbin.org/get" method="get" class="contact__form">
+                    <fieldset class="contact__fieldset">
+                        <section class="your_info">
+                        <legend class="offscreen">Send Us A Message</legend>
+                            <p class="contact__p">
+                                <label class="contact__label" for="name">Name:</label>
+                                <input class="contact__input" type="text" name="name" id="name" placeholder="Your name" required>
+                            </p>
+                            <p class="contact__p">
+                                <label class="contact__label" for="email">Email:</label>
+                                <input class="contact__input" type="email" name="email" id="email" placeholder="Your email" required>
+                            </p>
+                            <p class="contact__p">
+                                <label class="contact__label" for="message">What's your message about?</label>
+                                <input class="contact__input" type="text" name="message" id="message" list="message-list">
+                                <datalist id="message-list">
+                                    <option value="Admissions">
+                                    <option value="Academics">
+                                    <option value="Financials">
+                                    <option value="Other">
+                                </datalist>
+                            </p>
+                        </section>
+                        <section class="message">
+                            <p class="contact__p">
+                                <label class="contact__label" for="message">Your Message:</label>
+                                <br>
+                                <textarea class="contact__textarea" name="message" id="message" cols="20" rows="5"
+                                    placeholder="Type your message here"></textarea>
+                            </p>
+                            <button class="contact__button" type="submit">Send</button>
+                        </section>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+
+    </footer>
     
 </body>
 </html>
