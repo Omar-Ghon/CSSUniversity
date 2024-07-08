@@ -727,6 +727,20 @@ html {
     .principal figcaption {
         font-size: 1.2rem;
     }
+
+    .stats {
+        column-count: 2;
+    }
+
+    .stat {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .enlarge-bottom {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -755,19 +769,6 @@ html {
 
     .principal figcaption {
         font-size: 1rem;
-    }
-
-    .stats {
-        column-gap: 1rem;
-    }
-
-    .stat {
-        font-size: 1rem;
-    }
-
-    .enlarge {
-        font-size: 1.5rem;
-        color: var(--STAT-COLOR);
     }
 
     .form {
@@ -807,6 +808,7 @@ html {
     .principal figcaption {
         font-size: 0.9rem;
     }
+
 }
 
 @media screen and (min-width: 1241px) {
